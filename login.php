@@ -102,9 +102,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="page-header">
-        <p style="text-align: center"><img src="img/logo.png" alt = "Company Logo" /></p>
-    </div>
+    
+    <img class="mb-4" src="img/logo.png" alt = "Company Logo" />
+    
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
