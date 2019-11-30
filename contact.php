@@ -33,7 +33,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </button>
 
             <!-- Navbar Brand -->
-            <a href="#" class="navbar-brand">
+            <a href="home.php" class="navbar-brand">
             <img src="img/smallLogo.png" class="d-inline-block align-top" alt = "Company Logo" height="30px" width="130px" />
             </a>
         </div>
@@ -45,7 +45,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="home.php">Home</a>
                 </li>
                 <li>
                     <a href="database.php">Databases</a>

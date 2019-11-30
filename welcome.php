@@ -44,7 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="active">
+                <li>
                     <a href="home.php">Home</a>
                 </li>
                 <li>
