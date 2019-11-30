@@ -97,11 +97,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>EasyDB - Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
-        body{ font: 14px sans-serif; }
+        body{ font: 14px sans-serif; display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex-align: center;-ms-flex-pack: center;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;padding-top: 40px;padding-bottom: 40px;background-color: #f5f5f5; }
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
 <body>
+    <div class="page-header">
+        <p style="text-align: center"><img src="img/logo.png" alt = "Company Logo" /></p>
+    </div>
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
