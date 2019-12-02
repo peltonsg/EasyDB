@@ -16,6 +16,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <meta charset="UTF-8">
     <title>EasyDB - Database Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery.tabledit.js"></script>
 
     <style type="text/css">
         body {}
@@ -136,8 +137,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <div class="card" style="width: 25rem; position: relative; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
                             <img src="img/queryImage.png" width="175px" height="175px" class="card-img-top" alt="Add New Database">
                             <div class="card-body">
-                                <h4 class="card-title">Create a New Query</h4>
-                                <a href="#" class="btn btn-primary">+ Create New Query</a>
+                                <h4 class="card-title">Queries</h4>
+                                <a href="#" class="btn btn-primary">> View Queries</a>
                             </div>
                         </div>
                     </p>
@@ -148,8 +149,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <div class="card" style="width: 25rem; position: relative; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
                             <img src="img/statsImage.jpg" width="175px" height="175px" class="card-img-top" alt="Add New Database">
                             <div class="card-body">
-                                <h4 class="card-title">Show Database Statistics</h4>
-                                <a href="#" class="btn btn-primary">% View Database Statistics</a>
+                                <h4 class="card-title">Database Statistics</h4>
+                                <a href="#" class="btn btn-primary">> View Database Statistics %</a>
                             </div>
                         </div>
                     </p>
@@ -160,8 +161,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <div class="card" style="width: 25rem; position: relative; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
                             <img src="img/tableImage.jpg" width="175px" height="175px" class="card-img-top" alt="Add New Database">
                             <div class="card-body">
-                                <h4 class="card-title">Create a New Table</h4>
-                                <button onclick="createTable()" class="btn btn-primary">+ Create New Table</button>
+                                <h4 class="card-title">Tables</h4>
+                                <button onclick="viewTable()" class="btn btn-primary">> View Tables</button>
                             </div>
                         </div>
                     </p>
@@ -170,6 +171,111 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
         </div>
+
+        <div class="container" id="edit" style="width: 50%; margin: 0 auto; display: none; position: relative; top: 75px">
+            <!-- Example row of columns -->
+            <h2 style="text-align: center">School Database Tables</h2>
+            <p style="text-align: center"><a class="btn btn-primary btn-lg" href="database.php" role="button">Click here to go back to the School Dashboard page</a></p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p style="">
+                        <div class="card" style="width: 25rem; position: relative; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
+                            <img src="img/tableImage.jpg" width="175px" height="175px" class="card-img-top" alt="Add New Database">
+                            <div class="card-body">
+                                <h4 class="card-title">Create a New Table</h4>
+                                <a href="#" class="btn btn-primary">+ Create New Table</a>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <p style="">
+                        <div class="card" style="width: 25rem; position: relative; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
+                            <img src="img/tableImage.jpg" width="175px" height="175px" class="card-img-top" alt="Add New Database">
+                            <div class="card-body">
+                                <h4 class="card-title">Student Table</h4>
+                                <button onclick="editTable()" class="btn btn-primary">> View/Edit Student Table</button>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" id="student" style="width: 50%; margin: 0 auto; display: none; position: relative; top: 75px">
+            <!-- Example row of columns -->
+            <h2 style="text-align: center">School Database - Students Table</h2>
+            <p style="text-align: center"><a class="btn btn-primary btn-lg" href="database.php" role="button">Click here to go back to the School Database table page</a></p>
+
+            <br>
+            <div class="table-responsive">
+                <table id="data_table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Major</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Spencer Pelton</td>
+
+                            <td>24</td>
+                            <td>IT - Game</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Baker Mayfield</td>
+
+                            <td>25</td>
+                            <td>Athletic Administration</td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nick Jonas</td>
+
+                            <td>19</td>
+                            <td>Fine Arts</td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bill Gates</td>
+
+                            <td>42</td>
+                            <td>Computer Engineering</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            
+
+            <div class="top-panel">
+                <div class="btn-group">
+                <a class="btn btn-primary btn-lg" href="database.php" role="button">Edit</a> 
+                    <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">Export <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a class="export" data-export-type="csv">CSV</a></li>
+                        <li><a class="export" data-export-type="excel">XLS</a></li>
+                        <li><a class="export" data-export-type="txt">TXT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
 
 
     </main>
@@ -199,25 +305,45 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             }
         }
 
-        function createTable() {
-            var x = document.getElementById("tables");
-            var y = document.getElementById("edit");
+        function viewTable() {
+            var a = document.getElementById("tables");
+            var b = document.getElementById("edit");
 
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            if (a.style.display === "none") {
+                a.style.display = "block";
             } else {
-                x.style.display = "none";
+                a.style.display = "none";
             }
 
-            if (y.style.display === "block") {
-                y.style.display = "none";
+            if (b.style.display === "block") {
+                b.style.display = "none";
             } else {
-                y.style.display = "block";
+                b.style.display = "block";
             }
         }
 
+        function editTable() {
+            var c = document.getElementById("edit");
+            var d = document.getElementById("student");
 
+            if (c.style.display === "none") {
+                c.style.display = "block";
+            } else {
+                c.style.display = "none";
+            }
+
+            if (d.style.display === "block") {
+                d.style.display = "none";
+            } else {
+                d.style.display = "block";
+            }
+        }
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="tableExport/tableExport.js"></script>
+    <script type="text/javascript" src="tableExport/jquery.base64.js"></script>
+    <script src="js/custom_export.js"></script>
 </body>
 
 </html>
