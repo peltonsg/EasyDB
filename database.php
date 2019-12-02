@@ -17,7 +17,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style type="text/css">
-        body{ text-align: center }
+        body{  }
     </style>
 </head>
 <body>
@@ -72,12 +72,55 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
     </div>
 </nav>
+<main role = "main">
+<div class="container" style="width: 50%; margin: 0 auto;">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+          <p style = "">
+<div class="card" style="width: 25rem; position: relative; top: 75px; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
+  <img src="img/newDatabaseImage.png" width = "175px" height = "175px" class="card-img-top" alt="Add New Database">
+  <div class="card-body">
+    <h4 class="card-title">Create a New Database</h4>
+    <p class="card-text">This button is the first step in creating a relational database. Click below to get started making your new database.</p>
+    <a href="#" class="btn btn-primary">+ Create New Database</a>
+  </div>
+</div>
+</p> 
+</div>
+
+<div class="col-md-4">
+          <p style = "">
+<div class="card" style="width: 25rem; position: relative; top: 75px; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
+  <img src="img/existingDatabaseImage.png" width = "175px" height = "175px" class="card-img-top" alt="Add New Database">
+  <div class="card-body">
+    <h4 class="card-title">School</h4>
+    <p class="card-text">Dashboard for Queries and Tables inside the School database. Click here to access your School database.</p>
+    <a href="#" class="btn btn-primary">View School Database</a>
+  </div>
+</div>
+</p> 
+</div>
+
+<div class="col-md-4">
+          <p style = "">
+<div class="card" style="width: 25rem; position: relative; top: 75px; padding: 15px; border: 1px solid gray; border-radius: 5px; ">
+  <img src="img/existingDatabaseImage.png" width = "175px" height = "175px" class="card-img-top" alt="Add New Database">
+  <div class="card-body">
+    <h4 class="card-title">Business</h4>
+    <p class="card-text">Dashboard for Queries and Tables inside the Business database. Click here to access your Business database.</p>
+    <a href="#" class="btn btn-primary">View Business Database</a>
+  </div>
+</div>
+</p> 
+</div>
+
+</div>
+</div>
 
 </main>
 
-    <footer class="container">
-      <p>&copy; EasyDB 2019-2020</p>
-    </footer>
+
 
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

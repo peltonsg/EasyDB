@@ -80,7 +80,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div class="container">
           <h1>Hello, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
           <p>EasyDB is a web application that provides users the ability to create databases, store information, and run insightful queries without needing prior database or coding knowledge. Click the link below to make a database today!</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Get Started &raquo;</a></p>
+          <p><a class="btn btn-primary btn-lg" href="database.php" role="button">Get Started &raquo;</a></p>
         </div>
       </div>
 
