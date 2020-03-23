@@ -222,48 +222,49 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr data-row-id="1">
                             <td>1</td>
-                            <td>Spencer Pelton</td>
+                            <td contenteditable="true">Spencer Pelton</td>
 
-                            <td>24</td>
-                            <td>IT - Game</td>
+                            <td contenteditable="true">24</td>
+                            <td contenteditable="true">IT - Game</td>
 
                         </tr>
-                        <tr>
+                        <tr data-row-id="2">
                             <td>2</td>
-                            <td>Baker Mayfield</td>
+                            <td contenteditable="true">Baker Mayfield</td>
 
-                            <td>25</td>
-                            <td>Athletic Administration</td>
+                            <td contenteditable="true">25</td>
+                            <td contenteditable="true">Athletic Administration</td>
 
                         </tr>
-                        <tr>
+                        <tr data-row-id="3">
                             <td>3</td>
-                            <td>Nick Jonas</td>
+                            <td contenteditable="true">Nick Jonas</td>
 
-                            <td>19</td>
-                            <td>Fine Arts</td>
+                            <td contenteditable="true">19</td>
+                            <td contenteditable="true">Fine Arts</td>
 
                         </tr>
-                        <tr>
+                        <tr data-row-id="4">
                             <td>4</td>
-                            <td>Bill Gates</td>
+                            <td contenteditable="true">Bill Gates</td>
 
-                            <td>42</td>
-                            <td>Computer Engineering</td>
+                            <td contenteditable="true">42</td>
+                            <td contenteditable="true">Computer Engineering</td>
 
                         </tr>
 
                     </tbody>
                 </table>
             </div>
+           
+            <p style="font-weight: bold"> * Click in any cell to edit the table live</p>
 
-            
 
             <div class="top-panel">
                 <div class="btn-group">
-                <a class="btn btn-primary btn-lg" href="database.php" role="button">Edit</a> 
+                    
                     <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">Export <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                         <li><a class="export" data-export-type="csv">CSV</a></li>
@@ -338,6 +339,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 d.style.display = "block";
             }
         }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //for div
+            //$("div:odd").css("background-color", "#F4F4F8");
+            //$("div:even").css("background-color", "#EFF1F1");
+
+            //for table row
+            $("tr:even").css("background-color", "#F4F4F8");
+            $("tr:odd").css("background-color", "#EFF1F1");
+        });
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
