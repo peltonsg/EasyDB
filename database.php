@@ -36,7 +36,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </button>
 
                 <!-- Navbar Brand -->
-                <a href="home.php" class="navbar-brand">
+                <a href="welcome.php" class="navbar-brand">
                     <img src="img/smallLogo.png" class="d-inline-block align-top" alt="Company Logo" height="30px" width="130px" />
                 </a>
             </div>
@@ -258,13 +258,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     </tbody>
                 </table>
             </div>
-           
+
             <p style="font-weight: bold"> * Click in any cell to edit the table live</p>
 
 
             <div class="top-panel">
                 <div class="btn-group">
-                    
+
                     <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">Export <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                         <li><a class="export" data-export-type="csv">CSV</a></li>

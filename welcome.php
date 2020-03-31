@@ -33,7 +33,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </button>
 
             <!-- Navbar Brand -->
-            <a href="home.php" class="navbar-brand">
+            <a href="welcome.php" class="navbar-brand">
             <img src="img/smallLogo.png" class="d-inline-block align-top" alt = "Company Logo" height="30px" width="130px" />
             </a>
         </div>
@@ -78,6 +78,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
+          <img class="mb-4" src="img/logo.png" alt = "Company Logo" />
           <h1>Hello, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
           <p>EasyDB is a web application that provides users the ability to create databases, store information, and run insightful queries without needing prior database or coding knowledge. Click the link below to make a database today!</p>
           <p><a class="btn btn-primary btn-lg" href="tutorials.php" role="button">Get Started &raquo;</a></p>
