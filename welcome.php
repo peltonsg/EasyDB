@@ -45,10 +45,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="home.php">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="database.php">Databases</a>
+                    <a href="database.php">Database Templates</a>
                 </li>
                 <li>
                     <a href="tutorials.php">Tutorials</a>
@@ -80,7 +80,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div class="container">
           <h1>Hello, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
           <p>EasyDB is a web application that provides users the ability to create databases, store information, and run insightful queries without needing prior database or coding knowledge. Click the link below to make a database today!</p>
-          <p><a class="btn btn-primary btn-lg" href="database.php" role="button">Get Started &raquo;</a></p>
+          <p><a class="btn btn-primary btn-lg" href="tutorials.php" role="button">Get Started &raquo;</a></p>
         </div>
       </div>
 

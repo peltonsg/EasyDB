@@ -45,10 +45,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="home.php">Home</a>
+                    <a href="welcome.php">Home</a>
                 </li>
                 <li>
-                    <a href="database.php">Databases</a>
+                    <a href="database.php">Database Templates</a>
                 </li>
                 <li>
                     <a href="tutorials.php">Tutorials</a>
@@ -72,7 +72,30 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
     </div>
 </nav>
+<main role="main">
+<div class="container">
+  <form action="action_page.php">
 
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 </main>
 
     <footer class="container">

@@ -14,7 +14,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <head>
     <meta charset="UTF-8">
-    <title>EasyDB - Database Dashboard</title>
+    <title>EasyDB - Database Templates</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery.tabledit.js"></script>
 
@@ -48,10 +48,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <!-- Navbar Menu -->
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="home.php">Home</a>
+                        <a href="welcome.php">Home</a>
                     </li>
                     <li class="active">
-                        <a href="database.php">Databases</a>
+                        <a href="database.php"> Database Templates</a>
                     </li>
                     <li>
                         <a href="tutorials.php">Tutorials</a>

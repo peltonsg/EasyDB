@@ -45,10 +45,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="home.php">Home</a>
+                    <a href="welcome.php">Home</a>
                 </li>
                 <li>
-                    <a href="database.php">Databases</a>
+                    <a href="database.php">Database Templates</a>
                 </li>
                 <li class="active">
                     <a href="tutorials.php">Tutorials</a>
