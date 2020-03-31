@@ -80,7 +80,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div class="container">
           <img class="mb-4" src="img/logo.png" alt = "Company Logo" />
           <h1>Hello, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
-          <p>EasyDB is a web application that provides users the ability to create databases, store information, and run insightful queries without needing prior database or coding knowledge. Click the link below to make a database today!</p>
+          <p style="text-align: left">EasyDB is a web application that provides users the ability to create databases, learn technical information, download database templates, and run insightful queries without needing prior database or coding knowledge. Click the link below to make a database today!</p>
           <p><a class="btn btn-primary btn-lg" href="tutorials.php" role="button">Get Started &raquo;</a></p>
         </div>
       </div>
@@ -90,17 +90,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div class="row">
           <div class="col-md-4">
             <h2>Guided Learning</h2>
-            <p>The application features a step by step questionnaire that automatically builds a database for a user through visual assistance, dropdown choices, and short answer text boxes. Not only will the application create the database, but also store the database inside the application while allowing exporting to other programs such as Microsoft Access or OpenOffice Base. </p>
+            <p style="text-align: left">The application features three levels of tutorials that will make anyone a database expert. Build a database step by step with follow along code instructions using easy input boxes. Through EasyDB's tutorials you will create a fully functional database that can be used by you! Not only will the application create the database, but also store the database inside the application while allowing exporting to other programs such as Microsoft Access or OpenOffice Base. </p>
             <p><a class="btn btn-secondary" href="tutorials.php" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
-            <h2>Data Storage</h2>
-            <p>EasyDB includes many different options for how to report and store data for different types of users. All data is secured and automatically updated through live tables connected to the cloud. Data can be updated, deleted, or created at anytime. Cut down on those tedious data spreadsheets and use EasyDB to help! </p>
+            <h2>Database Templates</h2>
+            <p style="text-align: left">EasyDB includes many different options for how to save and export data for different types of users. With our Database Templates any person will be able to get there data stored and saved within minutes. Make them your own and pick ones similar to your current data needs. Data can be updated, deleted, or created at anytime. Cut down on those tedious data spreadsheets and use EasyDB to help! </p>
             <p><a class="btn btn-secondary" href="database.php" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
-            <h2>Beautiful Statistics</h2>
-            <p>EasyDB shows you the data that matters. Not only is it easy to create databases, but also run meaningful queries that display on a user-friendly dashboard. Pull back stats behind your sheets within seconds. Try it today!</p>
+            <h2>Create Databases Quickly </h2>
+            <p style="text-align: left">EasyDB helps you create and run databases within mere minutes. Check out the create your own custom database with our step by step form. Not only is it easy to create databases, but also run meaningful queries or download our quickstart templates. Databases are necessary in today's world and EasyDB is the place to figure out how to store your data!</p>
             <p><a class="btn btn-secondary" href="database.php" role="button">View details &raquo;</a></p>
           </div>
         </div>

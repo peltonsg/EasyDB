@@ -81,13 +81,13 @@ input[type=submit] {
 
                 <!-- Navbar Menu -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="welcome.php">Home</a>
                     </li>
                     <li>
                         <a href="database.php">Database Templates</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="tutorials.php">Tutorials</a>
                     </li>
                     <li>
@@ -183,7 +183,7 @@ input[type=submit] {
         ADD <input type="text" onfocus="this.value=''" name="tb2description" value="Enter the Column Name 'item_description'..."> VARCHAR(30)</pre>
         </p>
         <hr>
-        <h3>Step 5.1: Linking Tables</h3>
+        <h3>Step 5.1: Primary Keys</h3>
         
         <p>Now that we have a table with the information for items and a table with the information for the rooms we will begin to link the two tables. To do this we will be creating what is called a primary key for both of the current tables to use as a unique identifier. Each ID will correspond to exactly one item or one room. Using these ID’s we will be creating another table that use both those keys, known as foreign keys, to link the tables together.</p>
 
@@ -196,7 +196,7 @@ input[type=submit] {
         Alter <input type="text" onfocus="this.value=''" name="tb4name" value="Enter table one's name from before...">
         ADD PRIMARY KEY <input type="text" onfocus="this.value=''" name="itemID2" value="Enter the name of the item ID again from above..."></pre></p>
         <hr>
-        <h3>Step 5.2: Adding ID</h3>
+        <h3>Step 5.2: Adding second primary key</h3>
         <p>Now we create a RoomID for the locations table.</p>
         
         <p><pre>ALTER <input type="text" onfocus="this.value=''" name="tb5name" value="Enter table two's name...">
@@ -204,7 +204,7 @@ input[type=submit] {
         Alter <input type="text" onfocus="this.value=''" name="tb6name" value="Enter table two's name...">
         ADD PRIMARY KEY <input type="text" onfocus="this.value=''" name="itemID4" value="Enter the name of the room ID ('roomID')..."></pre></p>
         <hr>
-        <h3>Step 6.1: Primary Keys</h3>
+        <h3>Step 6.1: </h3>
         <p>With our Primary key’s created it is time to create the link table that will house a foreign key of both ID columns. In this case we will be creating a table with two foreign keys both from (TABLE 1 NAME) and (TABLE2 NAME). Name the table in a way that describes the link to make it clear what you are linking. (EX: Itemloc, Itemtoroom, itemlink.) Be sure when creating foreign keys to reference the table the key is coming from.</p>
         <p>Now that we know the entire structure, we can create the table in one command.</p>
         <p><pre>CREATE TABLE <input type="text" onfocus="this.value=''" name="linktable" value="Enter a value for table three's name..."> (

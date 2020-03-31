@@ -82,13 +82,13 @@ tr:nth-child(even) {
 
             <!-- Navbar Menu -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="active">
+                <li>
                     <a href="welcome.php">Home</a>
                 </li>
                 <li>
                     <a href="database.php">Database Templates</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="tutorials.php">Tutorials</a>
                 </li>
                 <li>
@@ -113,7 +113,7 @@ tr:nth-child(even) {
 <br><br><br><br>
 <div id="wrap">
     <div id="wrap2">
-    <h1>Congrats <?php echo htmlspecialchars($_SESSION["username"]); ?> on completing Level 1 and the <?php echo $_POST["dbname"]; ?>  Database! </h1>
+    <h1>Congrats <?php echo htmlspecialchars($_SESSION["username"]); ?> on completing Level 1 and <?php echo $_POST["dbname"]; ?>! </h1>
 
     
         
@@ -121,34 +121,33 @@ tr:nth-child(even) {
 
     <h4> Code </h4>
 <p><pre>
-CREATE DATABASE <?php echo $_POST["dbname"]; ?>
+CREATE DATABASE <?php echo $_POST["dbname"]; ?>; 
 
-CREATE TABLE <?php echo $_POST["tablename"]; ?> (<?php echo $_POST["column1name"]; ?> VARCHAR(30) NOT NULL)
+CREATE TABLE <?php echo $_POST["tablename"]; ?> (<?php echo $_POST["column1name"]; ?> VARCHAR(30) NOT NULL);
 
-ALTER TABLE <?php echo $_POST["tablename"]; ?>
-ADD (<?php echo $_POST["column2name"]; ?>VARCHAR(30) NOT NULL)
-ADD (<?php echo $_POST["column3name"]; ?>int NOT NULL)
+ALTER TABLE <?php echo $_POST["tablename"]; ?>&nbsp;
+ADD (<?php echo $_POST["column2name"]; ?> VARCHAR(30) NOT NULL)
+ADD (<?php echo $_POST["column3name"]; ?> int NOT NULL);
 
-CREATE TABLE <?php echo $_POST["table2name"]; ?> (<?php echo $_POST["roomname"]; ?>VARCHAR(30) NOT NULL)
+CREATE TABLE <?php echo $_POST["table2name"]; ?> (<?php echo $_POST["roomname"]; ?> VARCHAR(30) NOT NULL);
 
-ALTER TABLE <?php echo $_POST["table2name"]; ?>
-ADD (<?php echo $_POST["tb2description"]; ?> VARCHAR(30))
+ALTER TABLE <?php echo $_POST["table2name"]; ?>&nbsp;
+ADD (<?php echo $_POST["tb2description"]; ?> VARCHAR(30));
 
-ALTER <?php echo $_POST["tablename"]; ?>
+ALTER <?php echo $_POST["tablename"]; ?>&nbsp;
 ADD <?php echo $_POST["itemID"]; ?> int;
-ALTER <?php echo $_POST["tablename"]; ?>
-ADD PRIMARY KEY <?php echo $_POST["itemID"]; ?>
+ALTER <?php echo $_POST["tablename"]; ?>&nbsp;
+ADD PRIMARY KEY <?php echo $_POST["itemID"]; ?>;
 
-ALTER <?php echo $_POST["table2name"]; ?>
+ALTER <?php echo $_POST["table2name"]; ?>&nbsp;
 ADD <?php echo $_POST["roomID"]; ?> int;
-ALTER <?php echo $_POST["table2name"]; ?>
-ADD PRIMARY KEY <?php echo $_POST["roomID"]; ?>
+ALTER <?php echo $_POST["table2name"]; ?>&nbsp;
+ADD PRIMARY KEY <?php echo $_POST["roomID"]; ?>;
 
 CREATE TABLE <?php echo $_POST["linktable"]; ?> (
     FOREIGN KEY (<?php echo $_POST["itemID"]; ?>) REFERENCES <?php echo $_POST["tablename"]; ?>(<?php echo $_POST["itemID"]; ?>)
     FOREIGN KEY (<?php echo $_POST["roomID"]; ?>) REFERENCES <?php echo $_POST["table2name"]; ?>(<?php echo $_POST["roomID"]; ?>)
-)
-
+);
 
 </pre></p>
 

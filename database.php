@@ -77,7 +77,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </nav>
     <main role="main">
     
-    <br><br><br><br><button type="submit" onclick="window.open('dbts/Products.sql')">Download</button>
+    <br><br><br><br><button class="btn btn-secondary" type="submit" onclick="window.open('dbts/Products.sql')">Download</button>
 
         <div class="container" id="databases" style="width: 50%; margin: 0 auto;">
             <!-- Example row of columns -->
