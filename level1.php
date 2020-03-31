@@ -160,7 +160,7 @@ input[type=submit] {
         Examples: description, iteminfo, item_description </p>
         <p><pre>
         ALTER TABLE <input type="text" onfocus="this.value=''" name="nameofTableagain" value="Enter Table Name from before again...">
-        ADD <input type="text" onfocus="this.value=''" name="column2name" value="Enter the Column Name 'item_description'..."> VARCHAR(30) NOT NULL)
+        ADD (<input type="text" onfocus="this.value=''" name="column2name" value="Enter the Column Name 'item_description'..."> VARCHAR(30) NOT NULL)
         ADD <input type="text" onfocus="this.value=''" name="column3name" value="Enter the Column Name 'item_stock'..."> int NOT NULL
 </pre></p>
 
