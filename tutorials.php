@@ -18,8 +18,29 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style type="text/css">
-        body {
-            text-align: center
+        .block {
+            display: block;
+            width: 30%;
+            border: none;
+            background-color: #f2f2f2;
+            color: Black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+            font-weight: bold;
+            height: 4%
+        }
+
+        .block:hover {
+            background-color: #999999;
+            color: white;
+        }
+
+        #wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -75,12 +96,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <!-- Navbar Form -->
             </div>
         </div>
-    </nav>
+    </nav> <br><br><br><br>
     <main role="main">
+        <!-- <span style="text-align: right"><img src="img/lock.webp" alt="Locked Level" height="25px" width="25px" /> -->
+        <div id="wrap"> <button class="block" id="Tutorial1" onclick="location.href='level1.php'" value="Go to Level 1">Level 1: Creating a Basic Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="text-align: right"></span></button>
+    </div><br><div id="wrap"> <button class="block" id="Tutorial2">Level 2: Structure and Constraints &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+       
+    </div><br> <div id="wrap"><button class="block" id="Tutorial3">Level 3: Queries and Searches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
 
+    </div>
     </main>
-
-    <footer class="container">
+        <br>
+    <footer class="container" style="text-align: center">
         <p>&copy; EasyDB 2019-2020</p>
     </footer>
 
