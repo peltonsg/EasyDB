@@ -39,6 +39,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		font-size: 150%;
 
 	}
+
+    .box.img { 
+   border:1px solid #021a40;
+}
     </style>
 </head>
 <body>
@@ -97,14 +101,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <div id="wrap">
     <div class="wrapper">
-		<div class="box a"><img src="img/product.png" height="250px" width="460px"  alt="Product" /><br>Product Stock and Orders <p style="font-size: 80%">Product stock location and orders for a business with multiple storage locations.
+		<div class="box a"><img src="img/product.png"  height="250px" width="460px"  alt="Product" /><br>Multi-Location Orders <p style="font-size: 80%">Product stock location and orders for a business with multiple storage locations.
 Use case for this database would be for a company that needed to store orders of their products and search for the stock of their products in separate rooms at separate locations.  This database would also be able to store information about users and products and they’re various locations.
-</p></div>
-		<div class="box b">B</div>
-		<div class="box c">C</div>
-		<div class="box d">D</div>
-		<div class="box e">E</div>
-		<div class="box f">F</div>
+</p><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p></div>
+		<div class="box b"><div style="text-align: center"><img src="img/existingDatabaseImage.png" height="250px" width="250px"  alt="Product" /></div>Create your own Custom Database <p style="font-size: 80%">This will open up a step by step questionare similar to the database tutorials. The difference is that you will be able to customize and create your own database this time with what you have learned from the tutorials. The use case is for someone who wants a truly unique database. 
+</p><br><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Get Building</button></p></div>
+		<div class="box c"><img src="img/basici.png" height="250px" width="460px"  alt="Product" /><br>Basic Inventory Database <p style="font-size: 80%">Holds simple information about products and they’re location. A use case for this database would be for a company that solely needed to hold information about the products they carry and where they are storing those products.
+
+</p><br><br><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p></div>
+		<div class="box d"><img src="img/advancedi.png" height="250px" width="460px"  alt="Product" /><br>Advanced Inventory Database <p style="font-size: 80%">Holds information about products and they’re location in multiple possible locations and the stock of items in that location. A use case for this database would be for a company that plans on holding information about products that may be stored in multiple stock rooms.
+
+</p><br><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p></div>
+		<div class="box e"><img src="img/school.png" height="250px" width="460px"  alt="Product" /><br>School Schedule <p style="font-size: 80%">Holds information about teachers, students, classes, and class periods to create a class schedule for students and teachers. A use case for the database below would be for a business that connects users in a scheduled form similar to a school schedule where there are two entities that need to connect at a time and location.
+</p><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p></div>
+		<div class="box f"><img src="img/employee.png" height="250px" width="460px"  alt="Product" /><br>Employee Information <p style="font-size: 80%">Holds the information about employees, shifts and locations. A use case for the database below would be for a business that wants to store a schedule for their workers that display what shift the employee has and where they will be working that shift.  Information is also stored about the empoyee for contact and what department they are in.
+</p><p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p></div>
 	</div>
 
     </div>

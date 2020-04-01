@@ -85,7 +85,7 @@ input[type=submit] {
                         <a href="welcome.php">Home</a>
                     </li>
                     <li>
-                        <a href="database.php">Database Templates</a>
+                        <a href="templates.php">Database Templates</a>
                     </li>
                     <li class="active">
                         <a href="tutorials.php">Tutorials</a>
@@ -204,7 +204,7 @@ input[type=submit] {
         Alter <input type="text" onfocus="this.value=''" name="tb6name" value="Enter table two's name...">
         ADD PRIMARY KEY <input type="text" onfocus="this.value=''" name="itemID4" value="Enter the name of the room ID ('roomID')..."></pre></p>
         <hr>
-        <h3>Step 6.1: </h3>
+        <h3>Step 6.1: Linking Tables</h3>
         <p>With our Primary key’s created it is time to create the link table that will house a foreign key of both ID columns. In this case we will be creating a table with two foreign keys both from (TABLE 1 NAME) and (TABLE2 NAME). Name the table in a way that describes the link to make it clear what you are linking. (EX: Itemloc, Itemtoroom, itemlink.) Be sure when creating foreign keys to reference the table the key is coming from.</p>
         <p>Now that we know the entire structure, we can create the table in one command.</p>
         <p><pre>CREATE TABLE <input type="text" onfocus="this.value=''" name="linktable" value="Enter a value for table three's name..."> (
