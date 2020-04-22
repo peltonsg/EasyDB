@@ -86,7 +86,7 @@ tr:nth-child(even) {
                     <a href="welcome.php">Home</a>
                 </li>
                 <li>
-                    <a href="database.php">Database Templates</a>
+                    <a href="templates.php">Database Templates</a>
                 </li>
                 <li class="active">
                     <a href="tutorials.php">Tutorials</a>
