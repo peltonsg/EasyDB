@@ -91,13 +91,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
                 <!-- Navbar Menu -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="welcome.php">Home</a>
                     </li>
                     <li>
                         <a href="templates.php">Database Templates</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="tutorials.php">Tutorials</a>
                     </li>
                     <li>
@@ -119,10 +119,51 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
         </div>
     </nav>
+<br><br><br>
+    <div id="wrap">
+        <div id="wrap2">
+            <h1>Congrats <?php echo htmlspecialchars($_SESSION["username"]); ?> on completing Level 2 Tutorial!</h1>
 
-    </main>
+            <p>All example code used is displayed below and can be downloaded. For help exporting and querying data make sure to continue on to the <a href="level3.php">Level 3 Tutorial</a>!</p>
 
-    <footer class="container">
+            <h4> Code </h4>
+            <p>
+                <pre>ADD Firstname Varchar(30);<br><br>ADD item_description VARCHAR(30) NOT NULL);<br><br>CREATE TABLE People(
+FirstName Varchar(30) NOT NULL,
+LastName Varchar(30) NOT NULL,
+NickName Varchar(30) 
+);<br>
+CREATE TABLE People(
+ID int NOT NULL UNIQUE,
+FirstName Varchar(30) NOT NULL,
+LastName Varchar(30) NOT NULL,
+);<br>
+CREATE TABLE People(
+ID int NOT NULL,
+FirstName Varchar(30) NOT NULL,
+LastName Varchar(30) NOT NULL,
+CONSTRAINT UC_People UNIQUE (ID, LastName)
+);<br>
+CREATE TABLE People(
+FirstName Varchar(30) NOT NULL,
+LastName Varchar(30) NOT NULL,
+Age int CHECK (Age >=18) 
+);<br>
+CREATE TABLE People(
+FirstName Varchar(30) NOT NULL,
+LastName Varchar(30) NOT NULL,
+City varchar(30) DEFAULT ‘Cincinnati’
+);
+                </pre>
+            </p>
+
+            <h3>Export</h3>
+            <p text-align: center> <?php echo htmlspecialchars($_SESSION["username"]); ?>, you can download the code and export it to any database program by clicking the button below: <br><br>
+                <button type="submit" onclick="window.open('dbts/Level2.sql')">Download</button></p>
+
+        </div>
+    </div>
+    <footer class="container" style="text-align: center">
         <p>&copy; EasyDB 2019-2020</p>
     </footer>
 
