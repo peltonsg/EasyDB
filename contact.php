@@ -103,7 +103,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </nav> <br><br><br><br>
     <main role="main">
         <div class="container" style=" border-radius: 5px; background-color: #f2f2f2; padding: 20px;">
-            <form action="action_page.php">
+            <form action="mailto:peltonsg@mail.uc.edu" method="post" enctype="text/plain">
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
