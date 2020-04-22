@@ -116,20 +116,20 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div class="box c"><img src="img/basici.png" height="250px" width="460px" alt="Product" /><br>Basic Inventory Database <p style="font-size: 80%">Holds simple information about products and they’re location. A use case for this database would be for a company that solely needed to hold information about the products they carry and where they are storing those products.
 
                 </p><br><br>
-                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p>
+                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/Basic_Inventory_Database.sql')">Download</button></p>
             </div>
             <div class="box d"><img src="img/advancedi.png" height="250px" width="460px" alt="Product" /><br>Advanced Inventory Database <p style="font-size: 80%">Holds information about products and they’re location in multiple possible locations and the stock of items in that location. A use case for this database would be for a company that plans on holding information about products that may be stored in multiple stock rooms.
 
                 </p><br>
-                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p>
+                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/Advanced_Inventory_Database.sql')">Download</button></p>
             </div>
             <div class="box e"><img src="img/school.png" height="250px" width="460px" alt="Product" /><br>School Schedule <p style="font-size: 80%">Holds information about teachers, students, classes, and class periods to create a class schedule for students and teachers. A use case for the database below would be for a business that connects users in a scheduled form similar to a school schedule where there are two entities that need to connect at a time and location.
                 </p>
-                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p>
+                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/School_Database.sql')">Download</button></p>
             </div>
             <div class="box f"><img src="img/employee.png" height="250px" width="460px" alt="Product" /><br>Employee Information <p style="font-size: 80%">Holds the information about employees, shifts and locations. A use case for the database below would be for a business that wants to store a schedule for their workers that display what shift the employee has and where they will be working that shift. Information is also stored about the empoyee for contact and what department they are in.
                 </p>
-                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/ProductStockandOrdersMS.sql')">Download</button></p>
+                <p style="text-align: center"><button class="btn btn-primary btn-lg" type="submit" onclick="window.open('dbts/Employee.sql')">Download</button></p>
             </div>
         </div>
 
