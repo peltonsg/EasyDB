@@ -119,55 +119,64 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div id="wrap2">
                 <h1>Create Your Own Custom Database</h1>
 
-                <p>This section is a non-tutorial area to quickly create your own database with custom values. After entering any values in select the finished button at the bottom for your code. <b>Note:</b> If you require more columns, different queries, or other values restart this page after getting your other imports to obtain any other information you want to add to your database. Just make sure to save your work! before restarting!</p>
+                <p>This section is a non-tutorial area to quickly create your own database with custom values. After entering any values in select the finished button at the bottom for your code.</p>
+
+                <p><b>Note:</b> If you require more columns, different queries, or other values restart this page after getting your other imports to obtain any other information you want to add to your database. Just make sure to save your work! before restarting!</p>
 
                 <p>If you are on this page and do not understand what is happening please do our <a href="tutorials.php">tutorials here</a> first.</p>
 
                 <h3>Creating a Database</h3>
 
-                <p><b>ENTER YOUR DATABASE NAME IN THE FIELD BELOW:</b></p>
                 <form action="customDB-output.php" method="post">
                     <p>
                         <pre>CREATE DATABASE <input type="text" onfocus="this.value=''" name="dbname" value="Enter Database Name..."></pre>
                     </p>
-                
-                <h3>Creating Tables</h3>
 
-                <p>
+                    <h3>Creating Tables</h3>
+
+                    <p>
                         <pre>CREATE TABLE <input type="text" onfocus="this.value=''" name="tablename" value="Enter Table Name...">(<input type="text"  onfocus="this.value=''" name="column1name" value="Enter Column Name..."> <input type="text"  onfocus="this.value=''" name="datatype1" value="Enter Datatype...">)</pre>
                     </p>
 
-                <h3>Adding Columns to Tables</h3>
+                    <h3>Adding Columns to Tables</h3>
 
-                <p>
-                <pre>ALTER TABLE <input type="text" onfocus="this.value=''" name="nameofTableagain" value="Enter Table Name...">  ADD (<input type="text" onfocus="this.value=''" name="column2name" value="Enter a Column Name..."> <input type="text"  onfocus="this.value=''" name="datatype2" value="Enter Datatype...">)</pre>
-                </p>
+                    <p>
+                        <pre>ALTER TABLE <input type="text" onfocus="this.value=''" name="nameofTableagain" value="Enter Table Name...">  ADD (<input type="text" onfocus="this.value=''" name="column2name" value="Enter a Column Name..."> <input type="text"  onfocus="this.value=''" name="datatype2" value="Enter Datatype...">)</pre>
+                    </p>
 
-                <h3>Creating/Adding Primary Keys</h3>
+                    <h3>Creating/Adding Primary Keys</h3>
 
-                <p><pre>Alter <input type="text" onfocus="this.value=''" name="tablename2" value="Enter table name...">
-        ADD PRIMARY KEY <input type="text" onfocus="this.value=''" name="itemID" value="Enter the name of the primary key column..."></pre></p>
+                    <p>
+                        <pre>Alter <input type="text" onfocus="this.value=''" name="tablename2" value="Enter table name...">
+        ADD PRIMARY KEY <input type="text" onfocus="this.value=''" name="itemID" value="Enter the name of the primary key column..."></pre>
+                    </p>
 
-            <h3>Creating a Linking Table</h3>
+                    <h3>Creating a Linking Table</h3>
 
-            <p>
-                            <pre>CREATE TABLE <input type="text" onfocus="this.value=''" name="linktable" value="Enter a value for the linked table's name..."> (
+                    <p>
+                        <pre>CREATE TABLE <input type="text" onfocus="this.value=''" name="linktable" value="Enter a value for the linked table's name..."> (
         FOREIGN KEY (<input type="text" onfocus="this.value=''" name="itemID2" value="Enter the name of the item ID e.g. 'ItemID'...">) REFERENCES <input type="text" onfocus="this.value=''" name="tabone1" value="Enter table name..."> (<input type="text" onfocus="this.value=''" name="itemID3" value="Enter the name of the foreign key column...">)
         FOREIGN KEY (<input type="text" onfocus="this.value=''" name="roomID" value="Enter the name of the second foreign key...">) REFERENCES <input type="text" onfocus="this.value=''" name="tablename3" value="Enter table two's name...">(<input type="text" onfocus="this.value=''" name="itemID4" value="Enter the name of the other foreign key...">)
         );</pre>
-                        </p>
+                    </p>
 
-            <h2>Queries</h2>
+                    <h2>Queries</h2>
 
-            <h3>Creating Select Statements to View Data</h3>
-
-            <p>
-                    <pre>SELECT <input type="text" onfocus="this.value=''" name="column3name" value="Enter a Column Name...">
+                    <p>
+                        <pre>SELECT <input type="text" onfocus="this.value=''" name="column3name" value="Enter a Column Name...">
 FROM <input type="text" onfocus="this.value=''" name="tablename5" value="Enter table name...">;
 </pre>
-                </p>
+                    </p>
 
-            <p><pre>SELECT DISTINCT <input type="text" onfocus="this.value=''" name="column4name" value="Enter a Column Name..."> FROM <input type="text" onfocus="this.value=''" name="tablename6" value="Enter table name...">;</pre></p>
+                    <p>
+                        <pre>SELECT DISTINCT <input type="text" onfocus="this.value=''" name="column4name" value="Enter a Column Name..."> FROM <input type="text" onfocus="this.value=''" name="tablename6" value="Enter table name...">;</pre>
+                    </p>
+
+                    <p style="text-align: center"> Now you are finished and we can display/run our code. Press the button below: <br><br>
+
+                        <input type="submit" value="FINISHED!">
+                    </p>
+                </form>
 
 
             </div>

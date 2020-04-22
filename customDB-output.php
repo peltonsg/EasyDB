@@ -136,8 +136,8 @@ ADD PRIMARY KEY <?php echo $_POST["itemID"]; ?>;
 
 CREATE TABLE <?php echo $_POST["linktable"]; ?> (
     FOREIGN KEY (<?php echo $_POST["itemID2"]; ?>) REFERENCES <?php echo $_POST["tabone1"]; ?>(<?php echo $_POST["itemID3"]; ?>)
-    FOREIGN KEY (<?php echo $_POST["roomID"]; ?>) REFERENCES <?php echo $_POST["table3name"]; ?>(<?php echo $_POST["itemID4"]; ?>)
-);<br><br>SELECT <?php echo $_POST["column3name"]; ?>
+    FOREIGN KEY (<?php echo $_POST["roomID"]; ?>) REFERENCES <?php echo $_POST["tablename3"]; ?>(<?php echo $_POST["itemID4"]; ?>)
+);<br><br>SELECT <?php echo $_POST["column3name"]; ?> 
 FROM <?php echo $_POST["tablename5"]; ?>;<br><br>SELECT DISTINCT <?php echo $_POST["column4name"]; ?> FROM <?php echo $_POST["tablename6"]; ?>;</pre>
       </p>
 
